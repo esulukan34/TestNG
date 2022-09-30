@@ -23,4 +23,7 @@ public class HmcPage {
 
     @FindBy(css = ".username.username-hide-on-mobile")
     public WebElement girisBasarili;
+
+    @FindBy(xpath = "//*[@class='validation-summary-errors']")
+    public WebElement hataliGiris;
 }

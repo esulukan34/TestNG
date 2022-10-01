@@ -14,13 +14,13 @@ public class C02_NegatifTest {
         // 1 ) Bir Class olustur : NegativeTest
         // 2) Bir test method olustur NegativeLoginTest()
         // https://www.hotelmycamp.com/ adresine git
-        // login butonuna bas
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
         HmcPage hmcPage = new HmcPage(); // locate'lere ulasmak icin obje olusturduk
+        // login butonuna bas
         hmcPage.login.click();
 
         // test data username: manager1 ,  test data password : manager1!
-        hmcPage.username.sendKeys(ConfigReader.getProperty("hotelWrongUserName"));
+        hmcPage.userName.sendKeys(ConfigReader.getProperty("hotelWrongUserName"));
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.TAB)
                 .sendKeys(ConfigReader.getProperty("hotelWrongPassword"), Keys.ENTER)

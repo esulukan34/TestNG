@@ -19,7 +19,7 @@ public class C03_ConfigReader {
         hmcPage.login.click();
 
         //test data username: manager
-        hmcPage.username.sendKeys(ConfigReader.getProperty("hotelUserName"));
+        hmcPage.userName.sendKeys(ConfigReader.getProperty("hotelUserName"));
         // test data password : Manager1!
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.TAB)

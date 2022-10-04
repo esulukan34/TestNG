@@ -18,7 +18,7 @@ public class C02_HardAssert extends TestBeforeMethodAfterMethod {
     // Herhangi bir hata verdiğinde test methodu çalışmaya devam eder, en sonra rapor verir.
     // baslangıc  SoftAssert objeadı=new SoftAssert();  bitis objeadı.assertAll();
 
-    @Test
+    @Test(groups = "gp1")
     public void test01() {
         //1-amazon anasayfaya gidin
         driver.get("https://amazon.com");

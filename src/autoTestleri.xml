@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen testler">
+    <test name="auto">
+        <classes>
+            <class name="Odevler.Soru7"/>
+            <class name="Odevler.Soru11"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen classlar">
+    <test name="trendtol test">
+        <classes>
+            <class name="Odevler.TrendyolNegatifTest"/>
+            <class name="Odevler.TrendyolPozitifTest"/>
+        </classes>
+    </test>
+</suite>

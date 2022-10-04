@@ -1,5 +1,6 @@
 package pages;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,10 +8,8 @@ import utilities.Driver;
 
 public class TrendyolPage {
 
-    public TrendyolPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
+    public TrendyolPage(){PageFactory.initElements(Driver.getDriver(), this);
     }
-
     @FindBy(xpath = "(//*[@class='link-text'])[1]")
     public WebElement giris;
 
@@ -29,17 +28,17 @@ public class TrendyolPage {
     @FindBy(css = ".vQI670rJ")
     public WebElement aramaKutusu;
 
-    @FindBy(xpath = "//*[@id='container']")
-    public WebElement container;
-
     @FindBy(xpath = "(//*[@class='add-to-bs-tx'])[2]")
     public WebElement ilkUrun;
 
-    @FindBy(xpath = "(//*[text()='Sepetim'])[1]")
+    @FindBy(xpath = "(//*[@class='link-text'])[3]")
     public WebElement sepet;
 
-    @FindBy(xpath = "(//*[@class='pb-item'])[1]")
+    @FindBy(xpath = "(//*[@class='pb-item'])")
     public WebElement sepetKontrol;
+
+
+
 
 
 }

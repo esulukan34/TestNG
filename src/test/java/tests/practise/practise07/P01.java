@@ -1,4 +1,4 @@
-package tests.practise07;
+package tests.practise.practise07;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

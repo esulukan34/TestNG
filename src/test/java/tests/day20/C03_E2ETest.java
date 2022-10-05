@@ -11,7 +11,7 @@ import utilities.Driver;
 
 public class C03_E2ETest {
     @Test
-    public void E2Etest() throws InterruptedException {
+    public void E2Etest() throws InterruptedException  {
         //Tests packagenin altına class olusturun: CreateHotel
         //Bir metod olusturun: createHotel
         //https://www.hotelmycamp.com adresine git.
@@ -40,9 +40,9 @@ public class C03_E2ETest {
         actions.sendKeys(Keys.TAB)
                 .sendKeys("Guzelbahce")
                 .sendKeys(Keys.TAB).sendKeys("1500")
-                .sendKeys(Keys.TAB).sendKeys("10/02/2022")
+                .sendKeys(Keys.TAB).sendKeys("10/02/2023")
                 .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB).sendKeys("10/14/2022")
+                .sendKeys(Keys.TAB).sendKeys("10/14/2023")
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB).sendKeys("2")
                 .sendKeys(Keys.TAB).sendKeys("2")
@@ -58,7 +58,7 @@ public class C03_E2ETest {
 
 
         //“RoomReservation was inserted successfully” textinin göründüğünü test edin.
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Assert.assertTrue(hmcPage.roomReservationText.isDisplayed());
         //OK butonuna tıklayın.
         hmcPage.okButonu.click();

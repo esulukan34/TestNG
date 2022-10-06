@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.Driver;
 import utilities.TestBaseCross;
 import utilities.TestBeforeMethodAfterMethod;
 
@@ -26,5 +27,6 @@ public class C02_HardAssert extends TestBaseCross {
         Assert.assertTrue(sonuc.isDisplayed());
         //6-arama sonucunun Nutella içerdigini test edin
         Assert.assertTrue(sonuc.getText().contains("Nutella"));
+        Driver.closeDriver();
     }
 }

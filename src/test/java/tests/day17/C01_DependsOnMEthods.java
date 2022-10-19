@@ -6,7 +6,7 @@ import utilities.TestBeforeMethodAfterMethod;
 public class C01_DependsOnMEthods extends TestBeforeMethodAfterMethod {
     @Test
     public void test01() {
-        driver.get("https://wamazon1.com");
+        driver.get("https://amazon.com");
     }
 
     @Test(dependsOnMethods = "test01")

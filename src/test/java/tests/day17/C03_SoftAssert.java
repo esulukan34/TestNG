@@ -21,7 +21,7 @@ public class C03_SoftAssert extends TestBeforeMethodAfterMethod {
         driver.get("https://amazon.com");
         //2-title in Amazon içerdigini test edin
         softAssert.assertTrue(driver.getTitle().contains("Amazon"),"girdiginiz kelimeyi icermiyor");
-        //3-arama kutusnun erişilebilir oldugunu tets edin
+        //3-arama kutusunun erişilebilir oldugunu tets edin
         WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
         softAssert.assertTrue(aramaKutusu.isEnabled(),"WE erisilemez");
         //4-arama kutusuna Nuella yazıp aratın
